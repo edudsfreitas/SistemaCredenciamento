@@ -1,16 +1,20 @@
 package PacoteCredenciamento;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class AcessoRoxo extends Acesso{
 
 	Scanner ler= new Scanner(System.in);
+	Collection<String> conjuntoRoxo = new ArrayList<String>();
 	
 	public AcessoRoxo(String nome, String cpf, String telefone) 
 	{
 		super(nome, cpf, telefone);
 		super.setCor("Roxo");
 		super.setTipoDeAcesso("Infraestrutura");
+		conjuntoRoxo.add(nome);
 	}
 	
 	public void imprimeInfo()
@@ -23,7 +27,7 @@ public class AcessoRoxo extends Acesso{
 				"\nTipo de acesso: " + super.getTipoDeAcesso()
 				);			
 	}
+	
+	
 
 }
-
-

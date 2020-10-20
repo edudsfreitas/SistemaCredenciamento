@@ -27,7 +27,7 @@ public abstract class Acesso {
     }
 
     public void setCpf(String cpf) {
-       			this.cpf = cpf;
+       	this.cpf = cpf;
 	}
     
     public String getTelefone() {
